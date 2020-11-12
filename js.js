@@ -1,6 +1,32 @@
+"use strict"
+// Методы строк и чисел
+const str = 'test';
+const arr = [1,2,3];
+console.log( str.substr(0, 4))
+console.log( str[2] );
+
+// ФУНКЦИИ
+// function showFirstMessage(text) {
+//     let num = 20;
+//     return text;
+// }
+
+// let another = showFirstMessage('Hello World!');
+// console.log( another );
+
+// const logger = function() {
+//     console.log('Hello!');
+// }
+
+// logger();
+
+// const calc = ( a, b ) => {
+//     console.log('1');
+//     return a + b
+// };
 // ЦИКЛЫ
 
-let num = 50;
+// let num = 50;
 
 // while ( num <= 55 ) {
 //     console.log( num );
@@ -36,29 +62,29 @@ let num = 50;
 
 
 // СОЗДАЁМ ПРИЛОЖЕНИЕ
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
 
-const personalMovie = {
-    count:numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat:false,
-}
-let i = 0;
+// const personalMovie = {
+//     count:numberOfFilms,
+//     movies:{},
+//     actors:{},
+//     genres:[],
+//     privat:false,
+// }
+// let i = 0;
 
-while( i < 2 ) {
-    const a = prompt('Какой последний фильм вы посмотрели?','');
-          b = prompt('Как бы ва его оценили?','');
-          if( a != null && b != null && a != '' && b != '' && a.length < 50 ) {
-            personalMovie.movies[a] = b;
-            console.log('Done');
-            i++
-          }else {
-            console.log("Error");
-            i--;
-          }
-}
+// while( i < 2 ) {
+//     const a = prompt('Какой последний фильм вы посмотрели?','');
+//           b = prompt('Как бы ва его оценили?','');
+//           if( a != null && b != null && a != '' && b != '' && a.length < 50 ) {
+//             personalMovie.movies[a] = b;
+//             console.log('Done');
+//             i++
+//           }else {
+//             console.log("Error");
+//             i--;
+//           }
+// }
 
 
 // do {
@@ -89,15 +115,15 @@ while( i < 2 ) {
 // }
 
 
-if( personalMovie.count < 10 ) {
-    alert('Просмотрено довольно мало фильмов')
-}else if( personalMovie.count >= 10 && personalMovie.count <= 30 ) {
-    alert('Вы классический зритель');
-}else if( personalMovie.count > 30 ) {
-    console.log('Вы киноман');
-}
-else {
-    alert('Произошла ошибка');
-}
+// if( personalMovie.count < 10 ) {
+//     alert('Просмотрено довольно мало фильмов')
+// }else if( personalMovie.count >= 10 && personalMovie.count <= 30 ) {
+//     alert('Вы классический зритель');
+// }else if( personalMovie.count > 30 ) {
+//     console.log('Вы киноман');
+// }
+// else {
+//     alert('Произошла ошибка');
+// }
 
-console.log( personalMovie );
+// console.log( personalMovie );
